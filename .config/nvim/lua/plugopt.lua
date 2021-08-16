@@ -1,0 +1,6 @@
+require ('plugopt/vim-airline')
+require ('plugopt/nerdtree')
+require ('plugopt/vim-commentary')
+require ('plugopt/lsp')
+require ('plugopt/compe')
+require ('plugopt/fzf')
