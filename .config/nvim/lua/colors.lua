@@ -1,22 +1,31 @@
 local cmd = vim.cmd
+local u = require('utils')
 
--- Vertical split
-cmd("highlight VertSplit ctermbg=NONE ctermfg=8 cterm=NONE")
+local colortheme = 'gruvbox'
+local airlinetheme = 'dark'
 
--- Number
-cmd("highlight LineNr ctermfg=8")
-cmd("highlight CursorLineNr ctermfg=2")
-cmd("highlight NonText ctermfg=8")
+-- Auto launch colortheme
+local common = "VimEnter * ++nested"
 
--- Lsp
-cmd("highlight LspDiagnosticsDefaultError ctermfg=1")
-cmd("highlight LspDiagnosticsDefaultHint ctermfg=4")
-cmd("highlight LspDiagnosticsDefaultWarning ctermfg=6")
-cmd("highlight LspDiagnosticsDefaultInformation ctermfg=2")
+u.create_augroup({
+	{common, "colorscheme", colortheme},
+	{common, "AirlineTheme", airlinetheme},
+	
+	{common, "highlight Normal ctermbg=NONE ctermfg=15"},
 
--- Pmenu
-cmd("highlight Pmenu ctermbg=0 ctermfg=8")
-cmd("highlight PmenuSel ctermbg=0 ctermfg=190")
+	{common, "highlight VertSplit ctermbg=NONE ctermfg=8 cterm=NONE"},
 
--- Bracket
-cmd("highlight MatchParen ctermfg=6 ctermbg=NONE")
+	{common, "highlight LineNr ctermfg=240"},
+	{common, "highlight CursorLineNr ctermbg=NONE ctermfg=155"},
+	{common, "highlight NonText ctermfg=232"},
+
+	-- Lsp
+	{common, "highlight LspDiagnosticsDefaultError ctermfg=210"},
+	{common, "highlight LspDiagnosticsDefaultHint ctermfg=195"},
+	{common, "highlight LspDiagnosticsDefaultWarning ctermfg=227"},
+	{common, "highlight LspDiagnosticsDefaultInformation ctermfg=192"},
+
+	-- Pmenu
+	{common, "highlight Pmenu ctermbg=233 ctermfg=240"},
+	{common, "highlight PmenuSel ctermbg=233 ctermfg=190"},
+}, 'color')

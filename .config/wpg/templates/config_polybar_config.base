@@ -360,7 +360,7 @@ format-foreground = ${{colors.foreground-alt}}
 label = %title%
 label-background = ${{colors.background}}
 label-foreground = ${{colors.foreground}}
-
+label-maxlen = 100
 
 [settings]
 screenchange-reload = true

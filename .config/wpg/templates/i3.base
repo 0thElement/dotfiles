@@ -216,9 +216,9 @@ bindsym $mod+Print exec xfce4-screenshooter -w -c -s ~/Screenshots
 bindsym Shift+Print exec xfce4-screenshooter -r -c -s ~/Screenshots
 
 #startup app
-exec wpg -c | xargs -I {{}} wpg -s {{}} && alacritty & rhythmbox & nautilus
-exec ~/.config/polybar/launch.sh
-exec dunst
+exec --no-startup-id alacritty & wpg -c | xargs -I {{}} wpg -s {{}} && rhythmbox & nautilus
+exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id dunst
 exec --no-startup-id discord
 exec --no-startup-id vivaldi-stable
 exec --no-startup-id fcitx -d

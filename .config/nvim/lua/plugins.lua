@@ -11,6 +11,8 @@ require "paq" {
 	-- Airline: statusline & bufferline
 	"vim-airline/vim-airline";
 	"vim-airline/vim-airline-themes";
+	-- Gruvbox: theme
+	"morhetz/gruvbox";
 
 	-- EDITTING
 	-- Vim commentary: quick code commenting
