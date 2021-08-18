@@ -31,6 +31,7 @@ set fish_color_cancel '#555555'
 ### ALIASES AND ABBREVIATIONS
 
 alias cl='clear'
+alias clp='clear && pfetch'
 alias vi='nvim'
 
 #DIRECTORY
@@ -81,4 +82,5 @@ abbr -a -g fetch git fetch
 abbr -a -g pull git pull origin
 abbr -a -g push git push origin
 abbr -a -g tag git tag
+abbr -a -g gs git status
 abbr -a -g newtag git tag -a

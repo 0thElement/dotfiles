@@ -1,10 +1,10 @@
 local u = require('utils')
 
 u.create_augroup({
-	{"BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)"},
-	{"BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)"},
-	{"BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)"},
-	{"BufWritePre *.r lua vim.lsp.buf.formatting_sync(nil, 100)"},
+	{"bufwritepre *.js lua vim.lsp.buf.formatting_sync(nil, 100)"},
+	{"bufwritepre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)"},
+	{"bufwritepre *.py lua vim.lsp.buf.formatting_sync(nil, 100)"},
+	{"bufwritepre *.r lua vim.lsp.buf.formatting_sync(nil, 100)"},
 }, "lsp")
 
 require'lspconfig'.pyright.setup{}

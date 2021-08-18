@@ -10,6 +10,7 @@ wo.nu = true
 wo.rnu = true
 wo.wrap = false
 
-bo.tabstop = 4
-bo.softtabstop = 4
-bo.shiftwidth = 4
+o.tabstop = 4
+o.softtabstop = 4
+o.shiftwidth = 4
+o.expandtab = true

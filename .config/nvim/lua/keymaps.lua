@@ -50,6 +50,8 @@ brackets = {
 for _, brpair in ipairs(brackets) do
 	map('i', brpair, brpair..'<left><c-g>u', options)
 end
+map('i', '{<CR>', '{<CR>}<ESC>O', options)
+map('i', '{;<CR>', '{<CR>};<ESC>O', options)
 
 -- Keep cursor centered
 map('n', 'n', 'nzzzv', options)
