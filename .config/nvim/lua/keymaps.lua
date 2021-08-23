@@ -66,6 +66,12 @@ map('n', '<M-k>', ':m .-2<CR>==', options)
 map('i', '<M-j>', '<esc>:m .+1<CR>==i<Right>', options)
 map('i', '<M-k>', '<esc>:m .-2<CR>==i<Right>', options)
 
+-- ` instead of esc
+map('n', '`', '<Esc>', options)
+map('i', '`', '<Esc>', options)
+map('v', '`', '<Esc>', options)
+map('c', '`', '<Esc>', options)
+
 -- Save file
 map('n', '<C-s>', ':w<cr>', options) 
 

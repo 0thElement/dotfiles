@@ -1,4 +1,5 @@
 fish_vi_key_bindings
+export PATH="home/zerothelement/.local/bin:$PATH"
 
 ### WPGTK
 cat ~/.config/wpg/sequences &
